@@ -9,8 +9,8 @@ UDExtract.py [INPUT_FILE] [OUTPUT_FILE]
 [INPUT_FILE] -> The file you want to parse
 [OUTPUT_FILE] -> The file you want to store the results in
 ```
-`TLDs.txt` as the name implies, is a plaintext list (with a single entry per line) of TLDs that the script will try to extract.
-The file included with this repository is a modified version of IANA's TLD list which you can find [here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt)
+`TLDs.txt` - as the name implies, is a plaintext list (with a single entry per line) of TLDs that the script sees as valid (this basically acts like a filter, but strictly for domains, not URLs).
+The file included with this repository is a modified version of IANA's TLD list which you can find [here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
 The changes made are as follows:
 - Removed first line which denotes version info, etc..
 - Removed IDNs (Punycode TLDs) as these are not supported by the regex anyways
